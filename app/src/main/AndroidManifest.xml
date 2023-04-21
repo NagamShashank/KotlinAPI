@@ -14,7 +14,7 @@
         android:theme="@style/Theme.KotlinAPI"
         tools:targetApi="31">
         <activity
-            android:name=".PostActivity"
+            android:name=".NestedObjectsAPI.Nested_MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,13 +23,16 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".PostActivity"
+            android:exported="true">
+
+        </activity>
+        <activity
             android:name=".UserDetail"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
     </application>
 
 </manifest>

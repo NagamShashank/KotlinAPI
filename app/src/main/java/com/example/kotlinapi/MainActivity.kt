@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-       binding.UserRecyclerView.setHasFixedSize(true)
+        binding.UserRecyclerView.setHasFixedSize(true)
         linearLayoutManager = LinearLayoutManager(this)
         binding.UserRecyclerView.layoutManager = linearLayoutManager
 
