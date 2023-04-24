@@ -49,14 +49,11 @@ class Nested_MainActivity : AppCompatActivity() {
         Nested_ApiInterface.enqueue(object : Callback<List<NestedDataClass>?> {
             override fun onResponse(
                 call: Call<List<NestedDataClass>?>, response: Response<List<NestedDataClass>?>) {
-
                 val responseBodyNested =  response.body()!!
-
                 adapter = Nested_Adapter(baseContext,responseBodyNested)
                 adapter.notifyDataSetChanged()
                 binding.RecyclerViewNested.adapter = adapter
             }
-
             override fun onFailure(call: Call<List<NestedDataClass>?>, t: Throwable) {
                 TODO("Not yet implemented")
             }
