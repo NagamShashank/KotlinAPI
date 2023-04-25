@@ -48,7 +48,7 @@ class PostActivity : AppCompatActivity() {
 
                 val newID = ID.toInt()
                 val newUserID = UserID.toInt()
-                val myData = MyData(newID,newUserID,Title,UserBody)
+                val myData = MyData(newUserID,newID,Title,UserBody)
                 val call =  retrofitSendBuilder.SendData(myData)
 
                 call.enqueue(object:Callback<MyData>{

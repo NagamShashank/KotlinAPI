@@ -12,10 +12,12 @@
     <color name="Green">#348701</color>
     <color name="LightGreen">#6B9750</color>
 
-    <color name="LightGrey">#009E83</color>
+    <color name="LightGrey">#8E8E8E</color>
     <color name="ViewBackgroundColor">#92184957</color>
 
     <color name="LightGrey_2">#5759FF00</color>
+
+
 
     <color name="LightRed">#FF1E40</color>
 </resources>
